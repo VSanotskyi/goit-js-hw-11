@@ -1,3 +1,4 @@
+import './css/styles.css';
 import { FetchImagesService } from './js/fetchImagesService';
 import { refs } from './js/getRefs';
 import { LoadMoreBtn } from './js/load-more-btn';
