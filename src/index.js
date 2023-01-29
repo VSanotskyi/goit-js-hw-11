@@ -67,7 +67,6 @@ function appendImagesMarkup(data) {
   refs.containerDiv.insertAdjacentHTML('beforeend', makeImageMarkup(data));
 }
 
-//  Плавная прокрутка страницы после запроса и отрисовки каждой следующей группы изображений
 function onPageScrolling() {
   const { height: cardHeight } =
     refs.containerDiv.firstElementChild.getBoundingClientRect();
