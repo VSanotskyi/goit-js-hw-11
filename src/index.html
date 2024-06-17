@@ -1,15 +1,41 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
-    <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
-  </head>
-  <body>
-    <h1>Example title</h1>
-    <!-- ❗️❗️❗️ Add partials like so for every page -->
-    <include src="./partials/example.html"></include>
-  </body>
+<!doctype html>
+<html lang='en'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport'
+        content='width=device-width, user-scalable=no,
+        initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0'
+  >
+  <meta http-equiv='X-UA-Compatible'
+        content='ie=edge'
+  >
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+<form class='search-form'
+      id='search-form'
+>
+  <input
+    type='text'
+    name='searchQuery'
+    autocomplete='off'
+    placeholder='Search images...'
+  />
+  <button type='submit'>Search</button>
+</form>
+
+<div class='js-gallery gallery'></div>
+
+<button type='button'
+        class='js-btn-load-more is-hidden'
+        data-action='load-more'
+>
+  <span class='label'>Load more</span>
+</button>
+<script src='./index.js'
+        type='module'
+></script>
+</body>
 </html>

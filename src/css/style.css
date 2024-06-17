@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.search-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  height: 50px;
+  padding: 10px 0;
+
+  background-color: #3e56b2;
+}
+
+.search-form input, button {
+  padding: 5px 10px;
+}
+
+.search-form button, .js-btn-load-more {
+  border-radius: 5px;
+  border: none;
+}
+
+.search-form button:hover, .js-btn-load-more:hover {
+  background-color: #2e8eff;
+  color: #fff;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px 0;
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5px;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.js-btn-load-more {
+  display: none;
+}
